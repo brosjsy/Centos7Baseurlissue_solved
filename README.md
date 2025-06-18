@@ -1,13 +1,13 @@
-# 🛠️ CentOS 7 Yum BaseURL Error Fix (Vault Repo Solution)
+# CentOS 7 Yum BaseURL Error Fix (Vault Repo Solution)
 
-## 📌 Problem
+## Problem
 CentOS 7 has reached End of Life (EOL), and the standard Yum repository links (e.g., `mirror.centos.org`) no longer work. Running `yum update` or `yum install` may return:
 
 ```
 Cannot find a valid baseurl for repo: base/7/x86_64
 ```
 
-## ✅ Solution
+##  Solution
 
 ### Step 1: Navigate to the Yum repo directory
 
@@ -23,7 +23,7 @@ rm *  # Press 'y' to confirm deletion of all files
 vi CentOS-Base.repo
 ```
 
-> 📸 Sample Screenshots  
+>  Sample Screenshots  
 > ![Screenshot 1](https://github.com/user-attachments/assets/702ef1e1-0975-4e06-9439-1bc2ec35eba6)  
 > ![Screenshot 2](https://github.com/user-attachments/assets/3dc99457-efc0-42f9-9f40-128b6f90cfaa)
 
@@ -67,5 +67,5 @@ sudo yum update
 yum install wget
 ```
 
-> 📸 Update Process Screenshot  
+> Update Process Screenshot  
 > ![Update Screenshot](https://github.com/user-attachments/assets/e78a1376-17a4-4f96-8c4c-ebcd2d234b66)
